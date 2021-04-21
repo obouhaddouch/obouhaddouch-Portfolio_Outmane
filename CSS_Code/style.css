@@ -42,6 +42,20 @@ body {
   margin-left: 8px;
 }
 
+.nv .D-btn-nav {
+  background-color: rgba(0, 187, 255, 0.398);
+  border: none;
+  width: 80px;
+  position: relative;
+  left: 20px;
+  top: 10px;
+  font-size: 20px;
+  -webkit-box-shadow: -2px 2px 5px black;
+          box-shadow: -2px 2px 5px black;
+  border-radius: 10px;
+  outline: none;
+}
+
 .jumbotron {
   margin-top: 1px;
   background-color: rgba(68, 68, 249, 0.348);
@@ -268,6 +282,11 @@ body {
   margin-top: 20px;
 }
 
+.pr .pro-img {
+  width: 60%;
+  height: auto;
+}
+
 .pr .protit {
   background-color: rgba(174, 174, 247, 0.541);
   font-size: 50px;
@@ -430,5 +449,19 @@ body {
     font-size: 40px;
     color: rgba(85, 255, 0, 0.633);
   }
+}
+
+.bg-dark {
+  background: #2e2e2e;
+  color: blanchedalmond;
+}
+
+.fnt-h2-color {
+  color: #93fafa;
+  font-size: 28px;
+  text-shadow: black -1px 2px 40px;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  margin-left: 15px;
 }
 /*# sourceMappingURL=style.css.map */

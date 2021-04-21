@@ -34,6 +34,19 @@ body{
     background-color: rgba(85, 85, 201, 0.074);
     margin-left: 8px;
     }
+    .D-btn-nav{
+        background-color: rgba(0, 187, 255, 0.398);
+        border: none;
+        width: 80px;
+        position: relative;
+        left: 20px;
+        top: 10px;
+        font-size: 20px;
+        box-shadow: -2px 2px 5px black;
+        border-radius: 10px;
+        outline: none;
+
+    }
 }
 .jumbotron{
     margin-top: 1px;
@@ -175,3 +188,4 @@ body{
 }
 @import 'projecten';
 @import 'contact';
+@import 'darkTheme';
