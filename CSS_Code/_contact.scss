@@ -1,0 +1,138 @@
+.form{
+    padding: 50px;
+    //height: 600px;
+    
+}
+.inp{
+    margin-top: 20px;
+}
+.map{
+    border-radius: 20px;
+}
+.sch{
+    box-shadow: -2px 2px 10px rgba(176, 230, 96, 0.512),2px -2px 10px rgba(176, 230, 96, 0.512);
+    padding: 10px;
+}
+
+.txt_bg{
+    background-color: rgba(155, 213, 255, 0.63);
+    box-shadow: black -3px 5px 5px ;
+}
+.btnContact{
+    padding: 5px;
+    border-radius: 10px;
+    border: blue solid 1px;
+    background-color: rgba(150, 246, 5, 0.848);
+    float: right;
+    margin-right: 10px;
+    box-shadow: black -3px 5px 5px ;
+    margin-bottom: 10px;
+}
+.conPg{
+    width: 95%;
+    margin: 0 auto;
+    //background-color: blue;
+    padding: 50px 5px 10px 5px;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    padding: 5%;
+}
+.crc{
+    position: relative;
+    width: 99%;
+    margin-top: 3px;
+    box-shadow: rgb(155, 211, 230) -3px 3px 14px;
+    padding-bottom: 20px;
+    :hover{
+        background-color: rgba(204, 243, 167, 0.623);
+        
+        .img_cr{
+            width: 92%;
+        }
+
+    }
+}
+.img_cr{
+    width: 95%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 4px;
+    border-radius: 5px 5px 50% 30%;
+    
+}
+.card{
+    background-color: rgba(121, 233, 201, 0.163);
+    justify-content: center;
+    .card-body{
+        text-align: center;
+        background-color: rgba(92, 92, 190, 0.514);
+        border-radius:  50% 30%  0px 0px;
+        p{
+            color: blue;
+            background-color: rgba(224, 224, 233, 0);
+        }
+    }
+}
+.conta_info{
+    margin: 0 auto;
+    justify-content: center;
+    width: 310px;
+    line-height: 8px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -30px;
+    box-shadow: -2px 2px 10px rgba(176, 230, 96, 0.512),2px -2px 10px rgba(176, 230, 96, 0.512);
+    padding: 30px 10px;
+    a{
+        color: blue;
+        font-size: 100%;
+    }
+
+}
+#btnso{
+    display: none;
+}
+@media only screen and (max-width: 400px) {
+    .form{
+        padding: 15px;
+    }
+    
+    .conta_info{
+        width: 250px;
+        p{
+            font-size: 16px;
+        }
+        a{
+            font-size: 80%;
+        }
+    }
+}
+@media only screen and (max-width: 500px){
+    .crc{
+        width: 100%;
+        margin-top: 4px;
+    }
+    .sch{
+        padding: 0px;
+    }
+    #card_s{
+        display: none;
+    }
+    #Spbtn{
+        width: 100%;
+        
+        margin: 0 auto;
+        text-align: center;
+        margin-top: 10px;
+    }
+    #btnso{
+        display: block;
+        margin: 0 auto;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .ico{
+        font-size: 40px;
+        color: rgba(85, 255, 0, 0.633);
+    }
+}

@@ -1,0 +1,48 @@
+.condiv{
+    //height: 200px;
+}
+.tb{
+    padding: 4%;
+    .bgTb {
+        background-color: rgba(171, 171, 253, 0.341);
+        border-radius: 10px;
+        border: 1px solid rgb(81, 81, 81);
+        box-shadow: rgba(53, 19, 245, 0.348) -2px 5px 30px;
+        margin-top: 20px;
+        width: 100%;
+        .tdThB{
+            border:  rgb(81, 81, 81) 1px solid;
+            box-shadow: rgba(53, 19, 245, 0.348) -1px 1px 100px;
+        }
+    }
+    @media only screen and (max-width: 500px) {
+        .thead-dark th{
+            font-size: 80%;
+        }
+    }
+    @media only screen and (max-width: 400px) {
+        .thead-dark th , .thbg{
+            font-size: 70%;
+            font-weight: normal;
+            
+        }
+    }
+}
+.pr{
+    padding: 4%;
+    margin: 0 auto;
+    text-align: center;
+    .grIMG{
+        width: 80%;
+        height: auto;
+        margin-top: 20px;
+    }
+    .protit{
+        background-color: rgba(174, 174, 247, 0.541);
+        font-size: 50px;
+        color: rgb(118, 4, 4);
+        border-radius: 15px;
+        margin-bottom: 20px;
+    }
+}
+
