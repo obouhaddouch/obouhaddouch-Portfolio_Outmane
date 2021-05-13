@@ -18,6 +18,14 @@ body{
         overflow-y: scroll;
         box-shadow: -10px 10px 10px rgba(1, 10, 40, 0.877) , 2px 2px 2px rgb(1, 30, 118);
         color: rgb(219, 248, 252);
+
+        .go-back{
+         
+            color: cornflowerblue;
+            font-size: 30px;
+            margin-top: -30px;
+            margin-left: 10px;
+        }
         
         label{
             width: 100px;

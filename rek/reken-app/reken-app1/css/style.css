@@ -24,6 +24,13 @@ body {
   justify-content: center;
   align-items: center;
 }
+.go-back{
+         
+  color: cornflowerblue;
+  font-size: 30px;
+  margin-top: -20px;
+  margin-left: 0px;
+}
 
 h1 {
   margin-bottom: 1.5em;
