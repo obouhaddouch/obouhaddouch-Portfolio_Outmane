@@ -295,6 +295,17 @@ body {
   margin-bottom: 20px;
 }
 
+.projcten-text {
+  color: black;
+  margin: 20px;
+}
+
+b {
+  color: #4b0101;
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+}
+
 .form {
   padding: 50px;
 }
