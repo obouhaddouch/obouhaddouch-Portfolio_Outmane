@@ -299,6 +299,7 @@ body {
 .projcten-text {
   color: black;
   margin: 20px;
+  margin-bottom: 40px;
 }
 
 b {
@@ -310,7 +311,7 @@ b {
 .ifr {
   border: none;
   width: 100%;
-  height: 700px;
+  height: 594px;
 }
 
 .form {
