@@ -40,6 +40,7 @@
     .pro-img{
         width: 60%;
         height: auto;
+        border-radius: 20px;
     }
     .protit{
         background-color: rgba(174, 174, 247, 0.541);
@@ -57,4 +58,11 @@
 b{
     color: rgb(116, 0, 0);
     text-decoration: underline dotted;
+}
+.ifr{
+    //border: 5px solid blueviolet;
+    border: none;
+    width: 100%; 
+    height: 700px;
+    
 }
