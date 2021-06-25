@@ -46,6 +46,8 @@ label {
   color: #fff;
   border-radius: 2px;
   margin-bottom: 15px;
+  cursor: pointer;
+  border-radius: 20px;
 }
 
 .lin a {
@@ -88,6 +90,7 @@ label {
   float: left;
   margin-top: 20px;
   margin-bottom: -8px;
+  font-size: 13px;
 }
 
 .dropDw button {
@@ -97,8 +100,9 @@ label {
   width: 100px;
   background: #3281ee;
   color: #fff;
-  border-radius: 2px;
+  border-radius: 3px;
   margin-bottom: 15px;
+  cursor: pointer;
 }
 
 .select {
@@ -106,6 +110,7 @@ label {
   height: 25px;
   outline: none;
   margin-top: -20px;
+  border-radius: 10px;
 }
 
 .grid-container-rooster {

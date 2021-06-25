@@ -1,3 +1,4 @@
+//import Player.js
 import Player from "./Player.js";
 
 /**
@@ -9,9 +10,9 @@ import Player from "./Player.js";
 
 const players = [ ];
 let currentPlayer = 0; // This is the index of the array of the currentplayer
+//elementen selecteren
 const fields = document.querySelectorAll('.board > .field');
 const resetButton = document.querySelector(".reset-btn");
-
 const playerOneLbl = document.querySelector('.player-lbl-1');
 const playerTwoLbl = document.querySelector('.player-lbl-2');
 const symbolLblOne = document.querySelector('.symbol-lbl-1');
@@ -22,17 +23,16 @@ const scoreLblTow = document.querySelector(".score-lbl-2");
 
 
 
-
-
-//Create two players aligned with the Player class
+//Maaken van twee spelers aan die zijn afgestemd op de klasse Speler
 const player1 = new Player("Outmane", "X", 0);
 const player2 = new Player("All", "O", 0);
 console.log(player1.name);
-//Add both players to the players array
+//Voeg beide spelers toe aan de spelersarray
 players.push(player1);
 players.push(player2);
-//playerOneLbl.textContent = player.name;
+
 console.log(players);
+// print name en symbol || en getPoints 
 playerOneLbl.textContent = players[0].name;
 symbolLblOne.textContent = players[0].symbol;
 playerTwoLbl.textContent = players[1].name;
@@ -46,6 +46,7 @@ scoreLblTow.textContent = players[1].getPoints();
  * Connect the addSymbolToField function in the eventHandler
 */
 //for ...
+//voeg symbool toe aan veld en controleer Winnaar aan
 for(let i = 0; i < fields.length; i++){
     fields[i].addEventListener('click', function(){
        // console.log(this.textContent);
@@ -59,16 +60,16 @@ for(let i = 0; i < fields.length; i++){
  * Assignment 
  * Give body to the reset function (the function exists below)
  */
+// addEventListener naar resetButton
 resetButton.addEventListener("click", resetGame);
 resetButton.addEventListener("click", resetWinnerLbl);
-
 resetButton.addEventListener("click", function(){
     players[0].points = 0;
     scoreLblOne.textContent = players[0].getPoints();
     players[1].points = 0;
     scoreLblTow.textContent = players[1].getPoints(); 
 })
-
+//voeg symbool toe aan veld function
 function addSymbolToField(field) {
     const fieldContent = field.textContent;
     if (fieldContent === 'X' || fieldContent === 'O') {
@@ -79,6 +80,7 @@ function addSymbolToField(field) {
      * Add the current player symbol to the field textContent
      * What more needs to be done here? Make a short todolist
      */
+    //print symbol in field
     field.textContent = players[currentPlayer].symbol;
     currentPlayer++;
    
@@ -86,6 +88,7 @@ function addSymbolToField(field) {
         currentPlayer = 0;
     }
 }
+//winning Conditions
 const winningConditions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -164,7 +167,7 @@ function checkWinner() {
  
     }
 }
-
+// resetGame function
 function resetGame() {
     /**
      * Assignment
@@ -176,6 +179,7 @@ function resetGame() {
     // scoreLblOne.textContent = "";
     // scoreLblTow.textContent = "";
 }
+//resetWinnerLbl function
 function resetWinnerLbl(){
   //  WinnerLbl.textContent = "";
     console.log('cl')
@@ -184,7 +188,7 @@ function resetWinnerLbl(){
         //WinnerLbl.classList.add("display-none");
     }, 5000);
 }
-
+//addPointsPlayerOne function
 function addPointsPlayerOne() {
     console.log(" score of player 1");
     players[0].addPoints();
