@@ -4,12 +4,15 @@ export default class Student {
         this.emailAdres = emailAdres;
         this.password = password;
     }
+
     getName() {
         return this.name;
     }
+
     getEmailAdres() {
         return this.emailAdres;
     }
+    
     getPassword() {
         return this.password;
     }

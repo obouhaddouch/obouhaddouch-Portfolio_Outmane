@@ -8,6 +8,7 @@ const fun = function(){
         todos.push(input.value);
         todosCon.textContent = "";
         const rm = [];
+        
         for (let i = 0; i < todos.length; i++) {
             const todoCon = document.createElement('div');
             const pEl = document.createElement("p");

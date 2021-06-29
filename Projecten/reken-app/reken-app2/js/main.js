@@ -9,6 +9,7 @@ buttonts[0].addEventListener('click', function () {
 buttonts[1].addEventListener('click', function () {
     results[1].textContent = (Number(inputs[2].value) * 1000) / Number(inputs[3].value) + " mAh";
 })
+
 buttonts[2].addEventListener('click', function () {
     results[2].textContent = Number(inputs[4].value) * Number(inputs[5].value) + " W";
 })

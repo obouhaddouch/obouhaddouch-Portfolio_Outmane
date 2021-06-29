@@ -47,6 +47,7 @@ btnD.addEventListener("click", BtnTextchinger);
 const AutoDark = function () {
   const d = new Date();
   console.log(d);
+  
   if (d.getSeconds() > 15 && d.getSeconds() < 45) {
     if (dark === false) {
       DrFun();

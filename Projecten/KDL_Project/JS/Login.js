@@ -18,14 +18,11 @@ studenten.push(student3);
 studenten.push(student4);
 
 loginBtn.addEventListener('click', function () {
-
     for (let i = 0; i < studenten.length; i++) {
         if (email.value === studenten[i].getEmailAdres() && password.value === studenten[i].getPassword()) {
             loginLink.href = "./index.html";
         }
-
     }
-
 })
 
 console.log(student1.getName());

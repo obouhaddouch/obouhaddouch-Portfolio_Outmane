@@ -12,6 +12,7 @@ const onderdelen = {
 selectVak.addEventListener('click', function () {
     if (selectVak.value === 'html') {
         selectOnderdel.textContent = "";
+
         for (let i = 0; i < onderdelen.html.length; i++) {
             const optionEl = document.createElement("option");
             optionEl.value = "";
@@ -23,6 +24,7 @@ selectVak.addEventListener('click', function () {
     }
     else if (selectVak.value === 'css') {
         selectOnderdel.textContent = "";
+
         for (let i = 0; i < onderdelen.css.length; i++) {
             const optionEl = document.createElement("option");
             optionEl.value = "";
@@ -34,6 +36,7 @@ selectVak.addEventListener('click', function () {
     }
     else if (selectVak.value === 'bootstrap') {
         selectOnderdel.textContent = "";
+
         for (let i = 0; i < onderdelen.bootstrap.length; i++) {
             const optionEl = document.createElement("option");
             optionEl.value = "";
@@ -45,6 +48,7 @@ selectVak.addEventListener('click', function () {
     }
     else if (selectVak.value === 'javascript') {
         selectOnderdel.textContent = "";
+
         for (let i = 0; i < onderdelen.javascript.length; i++) {
             const optionEl = document.createElement("option");
             optionEl.value = "";
@@ -56,6 +60,7 @@ selectVak.addEventListener('click', function () {
     }
     else if (selectVak.value === 'c#') {
         selectOnderdel.textContent = "";
+
         for (let i = 0; i < onderdelen.c_sharp.length; i++) {
             const optionEl = document.createElement("option");
             optionEl.value = "";
@@ -63,9 +68,6 @@ selectVak.addEventListener('click', function () {
             optionEl.value = onderdelen.c_sharp[i];
             selectOnderdel.append(optionEl);
             //console.log(optionEl.value);
-
-
-
         }
     }
 
@@ -81,19 +83,14 @@ for (let i = 0; i < gridItems.length; i++) {
         const inschrijving = prompt("Ja/Nee om je in te schrijven voor fysieke lessen");
         console.warn(inschrijving);
 
-
         if (inschrijving.toLowerCase() === "ja") {
             alert("We hebben je inschreven voor " + this.textContent);
-            
-            
+
             const pEl = document.createElement("p");
             pEl.classList = "pEl";
             pEl.textContent +=  `${teller++}- ${this.textContent} `;
             mijnLessen.append(pEl);
-            
-
-
-
+        
         }
     })
 

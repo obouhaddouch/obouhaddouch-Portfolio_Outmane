@@ -19,7 +19,7 @@ const symbolLblOne = document.querySelector('.symbol-lbl-1');
 const symbolLblTow = document.querySelector('.symbol-lbl-2');
 const WinnerLbl = document.querySelector(".WinnerLbl");
 const scoreLblOne = document.querySelector(".score-lbl-1");
-const scoreLblTow = document.querySelector(".score-lbl-2");
+const scoreLblTwo = document.querySelector(".score-lbl-2");
 
 
 
@@ -38,7 +38,7 @@ symbolLblOne.textContent = players[0].symbol;
 playerTwoLbl.textContent = players[1].name;
 symbolLblTow.textContent = players[1].symbol;
 scoreLblOne.textContent = players[0].getPoints();
-scoreLblTow.textContent = players[1].getPoints();
+scoreLblTwo.textContent = players[1].getPoints();
 
 /**
  * Assignment
@@ -51,8 +51,8 @@ for(let i = 0; i < fields.length; i++){
     fields[i].addEventListener('click', function(){
        // console.log(this.textContent);
        // this.textContent = player1.symbol;
+
         addSymbolToField(this);
-    
         checkWinner();
     })
 }
@@ -67,11 +67,12 @@ resetButton.addEventListener("click", function(){
     players[0].points = 0;
     scoreLblOne.textContent = players[0].getPoints();
     players[1].points = 0;
-    scoreLblTow.textContent = players[1].getPoints(); 
+    scoreLblTwo.textContent = players[1].getPoints(); 
 })
 //voeg symbool toe aan veld function
 function addSymbolToField(field) {
     const fieldContent = field.textContent;
+
     if (fieldContent === 'X' || fieldContent === 'O') {
         alert('This field can not be used');
     }    
@@ -113,9 +114,11 @@ function checkWinner() {
         const winline = winningConditions[i];
         let winX = true;
         let winO = true;
+
         for (let j = 0; j < winline.length; j++) {
             const fieldIndex = winline[j];
             const field = fields[fieldIndex].textContent.toLowerCase();
+
             if (field === "x") {
                 winO = false;
             }
@@ -148,7 +151,7 @@ function checkWinner() {
             p.textContent = `${players[1].name} ${players[1].symbol} win`;
             WinnerLbl.append(p);
             setTimeout(resetGame, 2000);
-            scoreLblTow.textContent = players[1].getPoints();
+            scoreLblTwo.textContent = players[1].getPoints();
             status();
         }
         else if ((fields[0].textContent == 'X' || fields[0].textContent == 'O') && (fields[1].textContent == 'X'
@@ -176,7 +179,7 @@ function resetGame() {
         fields[i].textContent = "";
     }
     // scoreLblOne.textContent = "";
-    // scoreLblTow.textContent = "";
+    // scoreLblTwo.textContent = "";
 }
 //resetWinnerLbl function
 function resetWinnerLbl(){
@@ -191,11 +194,13 @@ function resetWinnerLbl(){
 function addPointsPlayerOne() {
     console.log(" score of player 1");
     players[0].addPoints();
-    }
+}
+
     function addPointsPlayerTwo() {
     console.log(" score of player 2");
     players[1].addPoints();
 }
+
 function status(){
     setTimeout(function(){
         WinnerLbl.textContent = "";
