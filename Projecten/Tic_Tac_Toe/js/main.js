@@ -164,7 +164,6 @@ function checkWinner() {
             setTimeout(resetGame, 2000);
            // status();
         }
- 
     }
 }
 // resetGame function
