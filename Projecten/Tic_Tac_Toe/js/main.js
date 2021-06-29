@@ -16,7 +16,7 @@ const resetButton = document.querySelector(".reset-btn");
 const playerOneLbl = document.querySelector('.player-lbl-1');
 const playerTwoLbl = document.querySelector('.player-lbl-2');
 const symbolLblOne = document.querySelector('.symbol-lbl-1');
-const symbolLblTow = document.querySelector('.symbol-lbl-2');
+const symbolLblTwo = document.querySelector('.symbol-lbl-2');
 const WinnerLbl = document.querySelector(".WinnerLbl");
 const scoreLblOne = document.querySelector(".score-lbl-1");
 const scoreLblTwo = document.querySelector(".score-lbl-2");
@@ -36,7 +36,7 @@ console.log(players);
 playerOneLbl.textContent = players[0].name;
 symbolLblOne.textContent = players[0].symbol;
 playerTwoLbl.textContent = players[1].name;
-symbolLblTow.textContent = players[1].symbol;
+symbolLblTwo.textContent = players[1].symbol;
 scoreLblOne.textContent = players[0].getPoints();
 scoreLblTwo.textContent = players[1].getPoints();
 

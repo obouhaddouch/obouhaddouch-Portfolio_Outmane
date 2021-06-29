@@ -5,6 +5,7 @@ export default class Player {
     this.symbol = symbol;
     this.points = points;                  
   }
+
   getSymbol(){
     return this.symbol
   }
@@ -16,9 +17,11 @@ export default class Player {
   addPoints(){
     this.points += 1
   }
+
   getPoints(){
     return this.points;
   }
+  
   getName(){
     return this.name;
   }
